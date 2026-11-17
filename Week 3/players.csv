@@ -1,0 +1,16 @@
+fname,lname,age,email,positions
+Tom,Hughes,27,tom.hughes@example.com,Loose Head Prop
+Sam,Okafor,29,sam.okafor@example.com,Hooker | Loose Head Prop
+Dan,Reid,31,dan.reid@example.com,Tight Head Prop
+Luke,Marsh,26,luke.marsh@example.com,Second Row
+Ben,Walsh,24,ben.walsh@example.com,Second Row | Blind Side Flanker
+Jack,Nolan,25,jack.nolan@example.com,Open Side Flanker | Number 8
+Will,Pryce,28,will.pryce@example.com,Blind Side Flanker | Number 8
+Owen,Davies,23,owen.davies@example.com,Number 8
+Ryan,Kelly,27,ryan.kelly@example.com,Scrum Half
+Harry,Foster,22,harry.foster@example.com,Fly Half | Inside Centre
+Eli,Brooks,30,eli.brooks@example.com,Inside Centre | Outside Centre
+Noah,Cole,26,noah.cole@example.com,Outside Centre | Left Wing
+Finn,Murray,21,finn.murray@example.com,Left Wing | Right Wing | Full Back
+Kai,Bennett,25,kai.bennett@example.com,Right Wing
+Leo,Grant,28,leo.grant@example.com,Full Back | Fly Half
