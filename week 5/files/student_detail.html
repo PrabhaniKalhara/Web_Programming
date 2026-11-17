@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="row">
+        {% if student.image %}
+        <div class="col-md-4 mb-3">
+            <img class="img-fluid rounded" src="{{ student.image.url }}" alt="Photo of {{ student }}">
+        </div>
+        {% endif %}
+
+        <div class="col">
+            <h2>{{ student.firstName|capfirst }} {{ student.lastName|upper }}</h2>
+
+            <p>
+                Age: {{ student.age }}<br>
+                Email: {{ student.email }}<br>
+                Enrolment Date: {{ student.enrolmentDate }}
+            </p>
+
+            <h3 class="h5">Enrolled On:</h3>
+            <ol>
+                {% for module in student.modules.all %}
+                    <li>{{ module.code }} {{ module.name }}</li>
+                {% endfor %}
+            </ol>
+
+            <a class="btn btn-outline-secondary" href="{% url 'myApp:studentlist' 1 %}">Back to students</a>
+        </div>
+    </div>
+
+{% endblock %}
