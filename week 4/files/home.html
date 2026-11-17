@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <ul>
+        {% for student in students %}
+            <li>
+                <a href="{% url 'student_detail' student.id %}">
+                    {{ student.firstName|capfirst }} {{ student.lastName|upper }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>{{ student.firstName|capfirst }} {{ student.lastName|upper }}</h2>
+
+    Age: {{ student.age }}<br>
+    Email: {{ student.email }}<br>
+    Enrolment Date: {{ student.enrolmentDate }}<br>
+    Enrolled On:
+
+    <ol>
+        {% for module in student.modules.all %}
+            <li>{{ module.code }} {{ module.name }}</li>
+        {% endfor %}
+    </ol>
+
+    <p><a href="{% url 'home' %}">Back to all students</a></p>
+{% endblock %}
