@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bill Splitter with Items</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav><a href="task1.html">Billing Splitter</a><a href="task2.html">Menu Items</a><a href="task3.html">To-Do List</a></nav>
+  <h1>Bill Splitter with Items</h1>
+
+  <label for="itemName">Add a menu item</label>
+  <div class="row">
+    <input id="itemName" type="text" placeholder="Item name">
+    <input id="itemCost" type="number" step="0.01" placeholder="Cost">
+  </div>
+  <button type="button" id="addItem">Add item</button>
+
+  <ul id="itemList" class="items"></ul>
+
+  <label for="tip">Tip rate</label>
+  <select id="tip">
+    <option value="0">0%</option>
+    <option value="5">5%</option>
+    <option value="10">10%</option>
+    <option value="15">15%</option>
+    <option value="20">20%</option>
+  </select>
+
+  <label for="people">Number of people</label>
+  <input id="people" type="number" placeholder="e.g. 4">
+
+  <button type="button" id="calculate">Calculate</button>
+
+  <div id="errors" class="error-box hidden"></div>
+  <div id="output"></div>
+
+  <script src="task2.js"></script>
+</body>
+</html>
